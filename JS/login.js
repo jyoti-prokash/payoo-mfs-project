@@ -8,6 +8,7 @@ function(event){
     console.log(phoneNumber,pinNumber)
     if(phoneNumber==='01746153493' && pinNumber==='1234'){
         alert("you have log in success");
+        window.location.href = './home.html'
     }
     else{
             alert('wrong number and password');
