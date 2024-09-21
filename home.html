@@ -31,10 +31,11 @@
                       <div class="space-x-5">
                         <button class="btn">Add Money</button>
                         <button class="btn">Cash Out</button>
+                        <button id="trx" class="btn">TRX</button>
                       </div>
                       <div class="divider"></div>
                       <!-- add money from -->
-                      <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                      <div class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
                           <div class="form-control">
                             <label class="label">
@@ -47,19 +48,23 @@
                               <span class="label-text">Pin</span>
                             </label>
                             <input id="pin-number" type="password" placeholder="Enter Pin Number" class="input input-bordered" autocomplete="off" required />
-                            <label class="label">
-                              <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
-                            </label>
                           </div>
                           <div class="form-control mt-6">
                             <button id="add-btn" class="btn btn-primary">Add</button>
                             </div>
                         </form>
                       </div>
+                      <!-- case out start -->
+                      
+                      <!-- case out end -->
+                      <div id="transection" class=" overflow-auto">
+                        <h1 class="text-2xl font-bold">Transection</h1>
+                      </div>
                   </div>
                 </div>
               </div>
         </main>
         <script src="./JS/home.js"></script>
+        <script src="./JS/caseout.js"></script>
 </body>
 </html>

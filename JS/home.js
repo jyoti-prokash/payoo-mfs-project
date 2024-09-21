@@ -9,12 +9,20 @@ document.getElementById('add-btn').addEventListener("click", function(event){
         const currentBalanceNumber = parseFloat(currentBalance);
         const updateBalance = inputAmount+currentBalanceNumber
         document.getElementById('current-balance').innerText = updateBalance;
+        const p = document.createElement('p');
+        p.style.color= 'red'
+        p.style.fontSize= '20px';
+        p.innerText=`add balance: ${inputAmount} new balance:${updateBalance}`
+        document.getElementById('transection').appendChild(p);
     }
     else{
         alert('wrong Account or Pin! try again');
     }
 })
-
 document.getElementById('logout').addEventListener("click", function(){
     window.location.href = ('./login.html');
+})
+
+document.getElementById('trx').addEventListener("click", function(){
+    document.getElementById('transection')
 })
